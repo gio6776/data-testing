@@ -108,7 +108,7 @@ st.markdown('##### Enter the the Welds Model Reference and the tests to be creat
 # only visible when there's not human answer in st.session_state.messages
 if st.session_state.sql_code_input_disabler == False and st.session_state.sql_code_input_disabler == False:
     st.text_input('Enter the Model Weld Reference', key = 'sql_code')
-    st.text_input('Enter the tests to be created separeted by comma (column_name :  descripition of the test)', key='primary_keys', height=200)
+    st.text_input('Enter the tests to be created separeted by comma (column_name :  descripition of the test)', key='primary_keys')
 
 # Enable button if sql_code and primary_keys are not empty
 if st.session_state.sql_code and st.session_state.primary_keys:
