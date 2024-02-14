@@ -103,7 +103,7 @@ chat = ChatOpenAI(model_name='gpt-4-0125-preview', temperature=0, streaming=True
 st.subheader('SQL Code Documentation Assistant 🤖')
 
 
-st.markdown('##### Enter the Information below to Generate a Documentation for your SQL Code')
+st.markdown('##### Enter the the Welds Model Reference and the tests to be created (column_name :  descripition of the test)')
 
 # only visible when there's not human answer in st.session_state.messages
 if st.session_state.sql_code_input_disabler == False and st.session_state.sql_code_input_disabler == False:
